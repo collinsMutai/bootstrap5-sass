@@ -7,8 +7,9 @@
     <title>Bootstrap 5 with Sass</title>
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/fontawesome.css"/>
+    <link rel="stylesheet" href="assets/vendors/glightbox/css/glightbox.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-   
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -54,15 +55,36 @@
               <button type="button" class="rounded-pill btn-rounded">Get in Touch<span><i class="fas fa-arrow-right"></i></span></button>
 
             </div>
-            <div class="col-md-6 intros"></div>
+            <!-- video illustration -->
+            <div class="col-md-6 intros text-end">
+              <div class="video-box">
+                <img src="assets/images/arts/intro-section-illustration.png" alt="video illustration" class="img-fluid">
+                <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                  <span>
+                    <i class="fas fa-play-circle"></i>
+                  </span>
+                  <span class="border-animation border-animation--border-1"></span>
+                  <span class="border-animation border-animation--border-2"></span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,122.7C384,139,480,181,576,170.7C672,160,768,96,864,90.7C960,85,1056,139,1152,144C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
       </section>
 
 
 
-
+    
+    <script src="/assets/vendors/glightbox/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+    const lightbox = GLightbox({
+      'href': 'https://www.youtube.com/watch?v=iJKCj8uAHz8&t=5812s',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': 'true'
+});</script>
     <script src="/assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
